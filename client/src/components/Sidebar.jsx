@@ -13,7 +13,7 @@ const navItems=[
   {to:'/ai/community', label:'community', icon:Users}
 ]
 
-const Sidebar = ({sidebar, setsidebar}) => {
+const Sidebar = ({sidebar, setSidebar}) => {
   const {user} = useUser();
   const {signOut, openUserProfile} = useClerk();
   return (
@@ -31,7 +31,7 @@ const Sidebar = ({sidebar, setsidebar}) => {
             //  className={({isActive}) => `px-3.5 py-2.5 flex items-center gap-3 rounded ${isActive ? 'bg-gradient-to-r from-[#3C81F6] to-[#9234EA] text-white': '' }`} 
              >
             {({isActive}) => (
-              <div onClick={() => setsidebar(false)} className={`px-3.5 py-2.5 flex items-center gap-3 rounded ${isActive ? 'bg-gradient-to-r from-[#3C81F6] to-[#9234EA] text-white' : ''}`}>
+              <div onClick={() => setSidebar(false)} className={`px-3.5 py-2.5 flex items-center gap-3 rounded ${isActive ? 'bg-gradient-to-r from-[#3C81F6] to-[#9234EA] text-white' : ''}`}>
                 <Icon className={`w-4 h-4 ${isActive ? 'text-white' : ''}`} />
                 {label}
               </div>
