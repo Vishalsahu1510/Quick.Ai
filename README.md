@@ -1,6 +1,6 @@
 # QuickAI – Full Stack AI SaaS App
 
-[🔴🔴LIVE](https://quick.ai)
+[Live](https://quick.ai)
 
 Easily create, analyze, and manage AI-generated content with QuickAI, an open-source AI-powered SaaS platform built using the PERN Stack (PostgreSQL, Express, React, Node.js).  
 Deployed on Vercel.
@@ -8,7 +8,7 @@ Deployed on Vercel.
 ## Features
 
 - **User Authentication**: Secure sign-in, sign-up, and profile management via Clerk.
-- **Subscription Billing**: Premium plans unlocked via Stripe payments.
+- **Subscription Billing**: Premium plans unlocked via Clerk payments.
 - **PostgreSQL Database**: Fast, serverless storage using Neon.
 - **Multiple AI Tools**:
   - Article Generator: Create long or short AI-written articles.
@@ -24,7 +24,7 @@ Deployed on Vercel.
 
 | Frontend        | Backend     | Database    | Auth & Billing | Deployment |
 |-----------------|------------|-------------|----------------|------------|
-| React (Vite)    | Node.js    | PostgreSQL  | Clerk, Stripe  | Vercel     |
+| React (Vite)    | Node.js    | PostgreSQL  | Clerk  | Vercel     |
 | Tailwind CSS    | Express.js | Neon        |                |            |
 
 ## Getting Started
@@ -63,7 +63,6 @@ Create `.env` files in both the `client` and `server` folders based on the provi
 You’ll need:
 - Clerk publishable key
 - Neon database URL
-<!-- - Stripe API keys -->
 - Any other service credentials
 
 ### 5. Run Locally
@@ -99,7 +98,7 @@ You’ll need:
 - [Demo App](https://)
 - [Neon Database](https://neon.tech/)
 - [Clerk Authentication](https://clerk.com/)
--[Clipdrop APIs](https://clipdrop.co/apis/docs/text-to-image)
+- [Clipdrop APIs](https://clipdrop.co/apis/docs/text-to-image)
 - [Vercel](https://vercel.com/)
 
 ## Contact
