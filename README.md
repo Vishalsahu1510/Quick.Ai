@@ -2,7 +2,6 @@
 
 [🔴🔴LIVE](https://quick.ai)
 
-
 Easily create, analyze, and manage AI-generated content with QuickAI, an open-source AI-powered SaaS platform built using the PERN Stack (PostgreSQL, Express, React, Node.js).  
 Deployed on Vercel.
 
@@ -83,7 +82,7 @@ You’ll need:
 
 
 ## Screenshots
-<img width="1920" height="1080" alt="Screenshot (740)" src="https://github.com/user-attachments/assets/4cece942-76da-4d0b-a54b-1b3a8063aa4b" />
+<!-- <img width="1920" height="1080" alt="Screenshot (740)" src="https://github.com/user-attachments/assets/4cece942-76da-4d0b-a54b-1b3a8063aa4b" />
 
 <img width="1920" height="1080" alt="Screenshot (741)" src="https://github.com/user-attachments/assets/2bb803e3-4836-4135-ba9b-053b1490cfde" />
 
@@ -91,7 +90,7 @@ You’ll need:
 
 <img width="1920" height="1080" alt="Screenshot (749)" src="https://github.com/user-attachments/assets/82e5caeb-e21c-481c-bcf4-d802ac695fb8" />
 
-<img width="1920" height="1080" alt="Screenshot (751)" src="https://github.com/user-attachments/assets/b710f8f7-3c30-4eaf-9e15-a562d8ca10ba" />
+<img width="1920" height="1080" alt="Screenshot (751)" src="https://github.com/user-attachments/assets/b710f8f7-3c30-4eaf-9e15-a562d8ca10ba" /> -->
 
 
 
