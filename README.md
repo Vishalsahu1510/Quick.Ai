@@ -84,7 +84,7 @@ You’ll need:
 
 
 
-## Screenshots
+<!-- ## Screenshots -->
 <!-- <img width="1920" height="1080" alt="Screenshot (740)" src="https://github.com/user-attachments/assets/4cece942-76da-4d0b-a54b-1b3a8063aa4b" />
 
 <img width="1920" height="1080" alt="Screenshot (741)" src="https://github.com/user-attachments/assets/2bb803e3-4836-4135-ba9b-053b1490cfde" />
