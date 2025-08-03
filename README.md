@@ -1,6 +1,8 @@
-# QuickAI – Full Stack AI SaaS App
+# [🔥 Quick.AI](quick-ai-sooty.vercel.app/)
 
-[Live](https://quick.ai)
+
+
+## 🔮 AI SaaS Platform – Built with PERN Stack (PostgreSQL, Express, React, Node.js)
 
 Easily create, analyze, and manage AI-generated content with QuickAI, an open-source AI-powered SaaS platform built using the PERN Stack (PostgreSQL, Express, React, Node.js).  
 Deployed on Vercel.
@@ -63,6 +65,8 @@ Create `.env` files in both the `client` and `server` folders based on the provi
 You’ll need:
 - Clerk publishable key
 - Neon database URL
+- CLIPDROP_API_KEY
+- CLOUDINARY_API_KEY
 - Any other service credentials
 
 ### 5. Run Locally
