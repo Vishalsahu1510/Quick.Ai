@@ -1,4 +1,4 @@
-import { Eraser, Sparkles } from 'lucide-react'
+import { DownloadCloudIcon, DownloadIcon, Eraser, Sparkles } from 'lucide-react'
 import { useState } from 'react'
 import axios from "axios";
 import { useAuth } from "@clerk/clerk-react";
@@ -42,9 +42,32 @@ const RemoveBackground = () => {
       // console.log(error)
     }
     setLoading(false)
-
-
   }
+
+  const downloadImage = async (imageUrl) => {
+    try {
+      // Fetch image as a blob
+      const response = await fetch(imageUrl, { mode: "cors" });
+      const blob = await response.blob();
+
+      // Create temporary object URL
+      const url = window.URL.createObjectURL(blob);
+
+      // Create a link and trigger download
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "image_By_QuickAi.png"; // Filename for download
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Clean up object URL
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Failed to download image:", error);
+    }
+  }
+  
   return (
     <div className="h-full overflow-y-scroll p-6 flex items-start flex-wrap gap-4 text-slate-700">
 
@@ -74,9 +97,21 @@ const RemoveBackground = () => {
 
       {/* --------------------->right column <--------------- */}
       <div className="w-full max-w-lg p-4 bg-white rounded-lg flex flex-col border border-gray-200 min-h-96 ">
-        <div className="flex items-center gap-3">
-          <Eraser className="w-5 h-5 text-[#FF4938]" />
-          <h1 className=" text-xl font-semibold ">Processed Image</h1>
+        <div className=' flex justify-between'>
+          <div className="flex items-center gap-3">
+            <Eraser className="w-5 h-5 text-[#FF4938]" />
+            <h1 className=" text-xl font-semibold ">Processed Image</h1>
+          </div>
+
+          {content ? (<button disabled={loading}
+                onClick={() => downloadImage(content)}
+                  className="mt-2 px-4 py-2 bg-[#FF4938] text-white rounded-lg text-sm text-center w-fit self-end"
+                >
+                  Download Image
+          </button>
+          ): (
+            <DownloadIcon className="w-5 h-5 text-[#FF4938]" />
+            )}
         </div>
         {
           !content ? (
